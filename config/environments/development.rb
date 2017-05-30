@@ -52,7 +52,6 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.action_mailer.default_url_options = { host: 'frozen-ridge-69864'}
+  # config.action_mailer.default_url_options = { host: 'frozen-ridge-69864', port: 3000}
 end
 
-# , port: 3000
