@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>kBlog</title>
+    <title>Flying Eye</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -12,22 +12,18 @@
   <body>
     <div id="sidebar">
       <div id="logo">
-        <%= link_to image_tag("rails.png", alt: "Rails logo"), root_path %>
+        <%= link_to image_tag("rails.png", alt: "Rails logo", width:"87"), root_path %>
       </div>
 
       <ul>
         <li class="category ">Website</li>
-        <li><%= link_to "Blog", root_path %></li>
+        <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About", about_path %></li>
       </ul>
 
       <ul>
-        <li class="category">Social</li>
-        <li><a href="https://twitter.com/kennsugiyama">Twitter</a></li>
-        <li><a href="https://www.instagram.com/grooviekenn/">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/kennsugiyama">LinkedIn</a></li>
-        <li><a href="https://github.com/KennSugiyama">gitHub</a></li>
-        <li><a href="mailto:kenn@kbsugiyama.com">Email</a></li>
+        <li class="category">Menu</li>
+        <li><a href="https://github.com/brn-gthbrg/flying_eye">GitHub</a></li>
       </ul>
 
       <% if !signed_in? %>
